@@ -1,0 +1,7 @@
+You can run UI Click on index.itml file.
+
+For running the server you need to follow these step:-
+1.) Go to the project directory ./server.
+2.) run the command npm i
+3.) start the server run command npm run dev
+4.) please use port 3002 for local.

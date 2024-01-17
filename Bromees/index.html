@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+<html>
+<head>
+  <link rel="stylesheet" href="./form.css">
+<title>Travel Form</title>
+<script src="./validate.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="left">
+    <div class="overlay">
+        <h1>Altitude Air!</h1>  
+        <p>We promise to ensure that your well-being is taken care of while travelling with us.
+          Boasting top in class fleet inventory and a 5 star approval for our in-flight experience,
+          you know you're getting the best from Altitude with no attitude</p>
+      </div>
+  </div>
+
+  <div class="right">
+    <h2>Explore & Experience</h2>
+    <p class="tagline">Get Onto Your Most comfortable journey Yet. All the way up.</p>
+    <form onsubmit="return validateForm()">
+      <div style="display: flex;">
+        <div style="flex: 1; margin-right: 10px;"> 
+          <input type="text" class="form-control" id="firstName"  placeholder="First Name"> 
+        </div>
+    
+        <div style="flex: 1; margin-left: 10px;">   
+          <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+        </div>
+      </div>
+    
+      <input type="email" class="form-control" id="email" placeholder="Email">
+
+      <input type="text" class="form-control" id="username" placeholder="Username">
+      
+      <input type="password" class="form-control" id="password" placeholder="Password">
+
+      <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+      
+      <button class="btn">GET STARTED</button>
+    </form>
+  </div>
+  
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modalContent">
+      <h2>User Information</h2>
+      <p><strong>First Name:</strong> <span id="modalFirstName"></span></p>
+      <p><strong>Last Name:</strong> <span id="modalLastName"></span></p>
+      <p><strong>Username:</strong> <span id="modalUsername"></span></p>
+      <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
